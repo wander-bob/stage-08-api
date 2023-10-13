@@ -1,0 +1,22 @@
+{
+  "name": "api-rocket-movies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.js",
+  "scripts": {
+    "dev": "nodemon ./server.js",
+    "migration": "knex migrate:latest --knexfile ./src/database/knex/config/knex_config.js",
+    "migration-up": "knex migrate:up --knexfile ./src/database/knex/config/knex_config.js",
+    "migration-down": "knex migrate:down --knexfile ./src/database/knex/config/knex_config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "knex": "^2.5.1",
+    "sqlite": "^5.0.1",
+    "sqlite3": "^5.1.6"
+  }
+}

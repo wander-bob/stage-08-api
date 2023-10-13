@@ -1,0 +1,142 @@
+:root{
+  font-size: 62.5%;
+  --gray-100: #c2c2c2;
+  --gray-200: #909090;
+  --gray-500: #525466;
+  --gray-600: #3C3F46;
+  --gray-800: #2D2E35;
+  --gray-900: #242327;
+  --blue-800: #243B77;
+  --blue-900: #232330;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  color: var(--gray-100);
+}
+html, body{
+  background-color: var(--gray-800);
+}
+.sr-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  opacity: 0;
+  margin: -1px;
+}
+.menu-active {
+  font-weight: 700;
+  color: #fff;
+}
+nav {
+  height: 7.2rem;
+  background-color: var(--blue-800);
+  display: flex;
+  gap: 6.4rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6.4rem 0 7.2rem;
+  box-shadow: 0 .8rem .8rem 0 rgba(0, 0, 0, 0.25);
+}
+.profile{
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.profile img {
+  width: 5.6rem;
+}
+ul {
+  display: flex;
+  gap: 5.6rem;
+  list-style: none;
+  justify-content: space-between;
+}
+ul li{
+  padding: 1.2rem;
+}
+li a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 500;
+  transition: .3s;
+}
+ul li:hover a{
+  color: #fff;
+}
+
+#search{
+  padding-inline: 2.8rem;
+  height: 5.6rem;
+  background-color: var(--blue-900);
+  display: flex;
+  align-items: center;
+}
+.input-wrapper {
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--gray-500);
+  border-radius: .4rem;
+}
+#search button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#search i{
+  color: var(--gray-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
+  padding-inline: .8rem;
+  transform: rotate(90deg);
+}
+#search input{
+  background-color: var(--gray-600);
+  border: none;
+  border-radius: .4rem 0 0 .4rem;
+  height: 3.2rem;
+  width: 40rem;
+  padding-inline-start: .8rem;
+}
+main {
+  padding-top: 2.8rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  width: 30rem;
+  height: 42rem;
+  border-radius: .4rem;
+  background-color: var(--gray-500);
+  opacity: .4;
+  transition: opacity .5s;
+}
+.card:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+footer{
+  padding-left: 7.2rem;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  background-color: var(--gray-900);
+}
+footer small {
+  font-size: 1.4rem;
+}
