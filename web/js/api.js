@@ -1,4 +1,4 @@
-
+import * as elements from './components/elements.js';
 const url = 'http://localhost:3000'
 
 const options = {
@@ -12,5 +12,6 @@ export async function readNotes(){
   .then(data => {return data.json()})
   .then(result => {return result;})
   .catch(error => {console.log(error);});
+  elements.createCard(data);
   return data;
 }

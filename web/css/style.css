@@ -42,14 +42,20 @@ nav {
   box-shadow: 0 .8rem .8rem 0 rgba(0, 0, 0, 0.25);
 }
 .profile{
+  height: 5.6rem;
+  width: 5.6rem;
   overflow: hidden;
   border-radius: 50%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: var(--gray-500);
 }
+.profile i , 
 .profile img {
-  width: 5.6rem;
+  font-size: 3.2rem;
 }
+
 ul {
   display: flex;
   gap: 5.6rem;
@@ -111,8 +117,13 @@ ul li:hover a{
 main {
   padding-top: 2.8rem;
   width: 100%;
+}
+.cards-wrapper{
+  padding-inline: 2rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 3.2rem;
+  flex-wrap: wrap;
 }
 .card {
   width: 30rem;
@@ -121,11 +132,30 @@ main {
   background-color: var(--gray-500);
   opacity: .4;
   transition: opacity .5s;
+  overflow: hidden;
 }
 .card:hover {
   opacity: 1;
   cursor: pointer;
 }
+.card h2 {
+  padding: .8rem;
+  color: var(--gray-100);
+  background-color: var(--blue-800);
+}
+.card p {
+  padding: .8rem;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+section h2{
+  font-size: 2.6rem;
+}
+
 footer{
   padding-left: 7.2rem;
   display: flex;
